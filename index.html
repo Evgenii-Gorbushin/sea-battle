@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/information.css" rel="stylesheet" type="text/css">
+    <link href="css/battle.css" rel="stylesheet" type="text/css">
+    <link href="css/history.css" rel="stylesheet" type="text/css">
+
+    <script src="js/index.js" type="module"></script>
+
+    <title>Sea battle</title>
+  </head>
+  <body>
+    <div class="information">
+      <label>
+        <input id="user-name" type="text" maxlength="25" placeholder="Введите имя игрока">
+      </label>
+      <div id="message-box" class="message-box"></div>
+
+      <div class="user-progress">
+        <h4>Ваш прогресс:</h4>
+        <div>
+          <span>Корабль 4кл</span>
+          <span>-</span>
+          <span>
+            <span id="ship-progress-4">0</span>/1
+          </span>
+        </div>
+        <div>
+          <span>Корабль 3кл</span>
+          <span>-</span>
+          <span>
+            <span id="ship-progress-3">0</span>/2
+          </span>
+        </div>
+        <div>
+          <span>Корабль 2кл</span>
+          <span>-</span>
+          <span>
+            <span id="ship-progress-2">0</span>/3
+          </span>
+        </div>
+        <div>
+          <span>Корабль 1кл</span>
+          <span>-</span>
+          <span>
+            <span id="ship-progress-1">0</span>/4
+          </span>
+        </div>
+      </div>
+
+      <div class="steps-summary">
+        <h4>Сводка по ходам:</h4>
+        <div>
+          Вы совершили:<span id="user-total-steps">0</span>
+        </div>
+        <div>
+          Компьютер совершил:<span id="comp-total-steps">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="battle">
+      <h1>Морской бой</h1>
+      <div class="control-panel">
+        <button id="make-step" onclick="window.gl.fun.makeStep()">Сделать ход</button>
+        <div class="battle-info">
+          Текущий ход №: <span id="current-step"></span><span id="whose-turn"></span>
+        </div>
+        <button id="rearrange-navy" onclick="window.gl.fun.initialize()">Новый флот</button>
+      </div>
+
+      <div id="battle-field-1" class="battle-field"></div>
+      <div id="battle-field-2" class="battle-field"></div>
+    </div>
+
+    <div class="history">
+      <h4>История ходов:</h4>
+      <ul id="history-list">
+<!--        <li>-->
+<!--          <span>1. </span>the step number one-->
+<!--        </li>-->
+      </ul>
+    </div>
+  </body>
+</html>

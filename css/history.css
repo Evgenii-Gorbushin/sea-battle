@@ -1,0 +1,30 @@
+#history-list {
+  list-style-type: none;
+  padding-inline-start: 10px;
+  font: normal normal normal 14px/20px "Courier New";
+  margin: 0;
+}
+
+#history-list li {
+  display: flex;
+}
+
+.record-number {
+  font-weight: bold;
+  min-width: 34px;
+}
+
+.record-damaged {
+  margin-left: 34px;
+  color: navy;
+}
+
+.record-sunk {
+  margin-left: 34px;
+  color: darkred;
+}
+
+.record-win {
+  margin-left: 34px;
+  color: blue;
+}

@@ -1,0 +1,35 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  color: #414141;
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h3,
+h4 {
+  text-align: center;
+  color: #8c8c8c;
+}
+
+h1 {
+  font-family: "Segoe Print", sans-serif;
+  color: lightsteelblue;
+  margin: 0;
+}
+
+.information,
+.history {
+  min-width: 300px;
+  background-color: #f8f8f8;
+}

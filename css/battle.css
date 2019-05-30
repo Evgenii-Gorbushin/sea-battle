@@ -1,0 +1,90 @@
+.battle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.battle-field {
+  display: grid;
+  grid-template-rows: repeat(10, 25px);
+  grid-template-columns: repeat(10, 25px);
+  margin: 30px 0;
+}
+
+.battle-field div {
+  text-align: center;
+  font-size: 18px;
+  border-top: lightsteelblue solid 1px;
+  border-left: lightsteelblue solid 1px;
+}
+
+.battle-field div:nth-child(10n) {
+  border-right: lightsteelblue solid 1px;
+}
+
+.battle-field div:nth-child(1n+91) {
+  border-bottom: lightsteelblue solid 1px;
+}
+
+#battle-field-1 {
+  cursor: pointer;
+}
+
+#battle-field-1 div:hover {
+  background-color: lightsteelblue;
+}
+
+.battle-field-ship {
+  background-color: #ffd33c;
+  border-color: #ffd33c;
+}
+
+.battle-field-destroyed-ship {
+  background-color: coral;
+  border-color: coral;
+}
+
+.control-panel {
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.control-panel div {
+  font-size: 15px;
+}
+
+.control-panel button {
+  min-width: 112px;
+  height: 36px;
+  border-radius: 26px;
+  box-shadow: 4px 7px 7px 0 #e5e5e5;
+  border: 0;
+  background: #7e71eb;
+  color: #fff;
+}
+
+.control-panel button:hover {
+  background-color: #ffd33c;
+  color: #414141;
+  cursor: pointer;
+}
+
+.control-panel button:focus {
+  outline: none;
+}
+
+.battle-info {
+  text-align: center;
+  margin: 0 40px;
+}
+
+#current-step {
+  color: black;
+}
+
+#whose-turn {
+  color: #7e71eb;
+}
